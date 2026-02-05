@@ -1,0 +1,1127 @@
+/* =====================================================
+   TALISKER BAND - ESTILOS PRINCIPALES
+   ===================================================== 
+   
+   GUÍA DE EDICIÓN:
+   - Colores principales están en :root (línea 10)
+   - Para cambiar tamaños de texto busca "font-size"
+   - Para cambiar espaciados busca "padding" o "margin"
+   - Los comentarios te guían por cada sección
+*/
+
+/* ===== VARIABLES DE COLOR ===== */
+:root {
+    --primary-blue: #4A6FA5;      /* Azul principal del logo */
+    --dark-blue: #3A5A85;          /* Azul oscuro para hovers */
+    --accent-gold: #B8860B;        /* Dorado del logo */
+    --dark-gold: #967214;          /* Dorado oscuro para hovers */
+    --bg-dark: #0a0a0a;            /* Fondo negro principal */
+    --bg-dark-2: #1a1a1a;          /* Fondo negro secundario */
+    --bg-dark-3: #2a2a2a;          /* Fondo negro terciario */
+    --text-light: #ffffff;         /* Texto blanco */
+    --text-gray: #b0b0b0;          /* Texto gris */
+}
+
+/* ===== RESET Y CONFIGURACIÓN BÁSICA ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== NAVEGACIÓN (NAVBAR) ===== 
+   El menú fijo en la parte superior
+*/
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(74, 111, 165, 0.2);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo (imagen + texto) */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-image {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: var(--primary-blue);
+}
+
+/* Menú de navegación */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+.nav-menu a:hover {
+    color: var(--primary-blue);
+}
+
+/* Menú hamburguesa (móvil) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 2px;
+    background: var(--primary-blue);
+    transition: 0.3s;
+}
+
+/* ===== SECCIÓN HERO (Portada) ===== */
+.hero {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+    overflow: visible;
+    padding: 120px 20px 60px 20px;
+}
+
+/* Efectos de fondo del hero */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(74, 111, 165, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(184, 134, 11, 0.1) 0%, transparent 50%);
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="1" fill="rgba(74,111,165,0.02)"/></svg>');
+    background-size: 50px 50px;
+}
+
+.hero-content {
+    text-align: center;
+    z-index: 2;
+    animation: fadeInUp 1s ease-out;
+    max-width: 1200px;
+}
+
+/* Logo grande en el hero */
+.hero-logo {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 1s ease-out 0.2s backwards;
+}
+
+/* Título principal (TALISKER BAND) */
+.hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 10vw, 7rem);
+    font-weight: 900;
+    letter-spacing: 15px;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+/* Subtítulo (FOLK & CELTIC MUSIC) */
+.hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    color: var(--text-gray);
+    margin-bottom: 3rem;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ===== BOTONES ===== */
+.btn {
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    border-radius: 0;
+    transition: all 0.3s;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    border: 2px solid;
+    cursor: pointer;
+    background: none;
+}
+
+/* Botón azul */
+.btn-primary {
+    background: var(--primary-blue);
+    color: var(--text-light);
+    border-color: var(--primary-blue);
+}
+
+.btn-primary:hover {
+    background: var(--dark-blue);
+    border-color: var(--dark-blue);
+    transform: translateY(-2px);
+}
+
+/* Botón dorado */
+.btn-secondary {
+    background: transparent;
+    color: var(--accent-gold);
+    border-color: var(--accent-gold);
+}
+
+.btn-secondary:hover {
+    background: var(--accent-gold);
+    color: var(--bg-dark);
+    transform: translateY(-2px);
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== SECCIONES GENERALES ===== */
+section {
+    padding: 6rem 0;
+}
+
+/* Título de cada sección */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    text-align: center;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    color: var(--text-light);
+}
+
+/* Subtítulo de cada sección */
+.section-subtitle {
+    text-align: center;
+    color: var(--text-gray);
+    margin-bottom: 4rem;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== SECCIÓN SOBRE NOSOTROS ===== */
+.about {
+    background: var(--bg-dark-2);
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-gray);
+    margin-bottom: 2rem;
+}
+
+/* Video de YouTube */
+.about-video {
+    margin-top: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-video iframe {
+    width: 100%;
+    height: 450px;
+    border: 2px solid var(--primary-blue);
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .about-video iframe {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-video iframe {
+        height: 220px;
+    }
+}
+
+/* ===== SECCIÓN NOTICIAS ===== */
+.news {
+    background: var(--bg-dark);
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.news-card {
+    background: var(--bg-dark-2);
+    border: 1px solid rgba(74, 111, 165, 0.2);
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-blue);
+    box-shadow: 0 10px 30px rgba(74, 111, 165, 0.3);
+}
+
+.news-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 2rem;
+}
+
+.news-date {
+    color: var(--accent-gold);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.news-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.news-description {
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+/* ===== PRÓXIMOS CONCIERTOS ===== */
+.upcoming-concerts {
+    background: var(--bg-dark);
+    padding: 5rem 0;
+    border-bottom: 2px solid var(--primary-blue);
+}
+
+.upcoming-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.upcoming-card {
+    background: var(--bg-dark-2);
+    border: 3px solid var(--accent-gold);
+    overflow: hidden;
+    transition: all 0.3s;
+    position: relative;
+    max-width: 380px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 40px rgba(184, 134, 11, 0.3);
+}
+
+.upcoming-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(184, 134, 11, 0.5);
+    border-color: var(--primary-blue);
+}
+
+.upcoming-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--accent-gold);
+    color: var(--bg-dark);
+    padding: 0.6rem 1.2rem;
+    font-weight: 900;
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+    z-index: 1;
+    box-shadow: 0 4px 15px rgba(184, 134, 11, 0.6);
+}
+
+.upcoming-thumbnail {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.upcoming-thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.upcoming-card:hover .upcoming-thumbnail {
+    opacity: 0.9;
+}
+
+.upcoming-content {
+    padding: 2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.upcoming-date {
+    color: var(--accent-gold);
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.upcoming-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.upcoming-venue {
+    color: var(--primary-blue);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.upcoming-description {
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.upcoming-btn {
+    margin-top: auto;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* Botón para ver cartel */
+.btn-view-poster {
+    width: 100%;
+    padding: 0.8rem;
+    background: transparent;
+    border: 2px solid var(--primary-blue);
+    color: var(--primary-blue);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    letter-spacing: 1px;
+}
+
+.btn-view-poster:hover {
+    background: var(--primary-blue);
+    color: var(--text-light);
+    transform: translateY(-2px);
+}
+
+/* Modal del cartel */
+.poster-modal-image {
+    width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    background: var(--bg-dark-3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .upcoming-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .upcoming-card {
+        max-width: 100%;
+    }
+    
+    .poster-modal-image {
+        max-height: 70vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .upcoming-content {
+        padding: 1.5rem;
+    }
+    
+    .upcoming-title {
+        font-size: 1.3rem;
+    }
+    
+    .upcoming-thumbnail {
+        height: 200px;
+    }
+}
+/* ===== CONCIERTOS DESTACADOS ===== */
+.featured-concerts {
+    background: var(--bg-dark-2);
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.featured-card {
+    background: var(--bg-dark-3);
+    border: 2px solid var(--primary-blue);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+.featured-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--accent-gold);
+    color: var(--bg-dark);
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.featured-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(74, 111, 165, 0.5);
+}
+
+.featured-thumbnail {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* ===== SECCIÓN MÚSICA ===== */
+.music {
+    background: var(--bg-dark);
+}
+
+.music-players {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.player-container {
+    background: var(--bg-dark-2);
+    padding: 2rem;
+    border: 1px solid rgba(74, 111, 165, 0.2);
+}
+
+.player-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.player-container iframe {
+    width: 100%;
+    border: none;
+}
+
+/* ===== COMPONENTES/FORMACIONES ===== */
+.components {
+    background: var(--bg-dark-2);
+}
+
+.components-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.component-card {
+    background: var(--bg-dark-3);
+    padding: 2.5rem;
+    text-align: center;
+    border: 1px solid rgba(74, 111, 165, 0.2);
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.component-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(74, 111, 165, 0.1), transparent);
+    transition: left 0.5s;
+}
+
+.component-card:hover::before {
+    left: 100%;
+}
+
+.component-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-blue);
+    box-shadow: 0 10px 40px rgba(74, 111, 165, 0.3);
+}
+
+.component-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.component-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-blue);
+}
+
+.component-description {
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+
+/* ===== CONCIERTOS PASADOS (ACORDEÓN POR AÑOS) ===== */
+.past-shows {
+    background: var(--bg-dark);
+}
+
+/* Acordeón de cada año */
+.year-accordion {
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(74, 111, 165, 0.2);
+    background: var(--bg-dark-2);
+}
+
+.year-header {
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+    border-left: 4px solid var(--primary-blue);
+}
+
+.year-header:hover {
+    background: var(--bg-dark-3);
+}
+
+.year-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--primary-blue);
+    letter-spacing: 2px;
+}
+
+.year-count {
+    color: var(--accent-gold);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.year-icon {
+    color: var(--primary-blue);
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.year-header.active .year-icon {
+    transform: rotate(180deg);
+}
+
+/* Contenido desplegable de cada año */
+.year-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.year-content.active {
+    max-height: 5000px;
+    transition: max-height 0.6s ease-in;
+}
+
+/* Grid de conciertos */
+.past-shows-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.past-show-card {
+    background: var(--bg-dark-3);
+    border: 1px solid rgba(74, 111, 165, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.past-show-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-blue);
+    box-shadow: 0 15px 40px rgba(74, 111, 165, 0.4);
+}
+
+.past-show-thumbnail {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.past-show-card:hover .past-show-thumbnail {
+    transform: scale(1.05);
+}
+
+.past-show-content {
+    padding: 2rem;
+    width: 100%;
+}
+
+.past-show-date {
+    color: var(--accent-gold);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.past-show-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.past-show-venue {
+    color: var(--primary-blue);
+    font-size: 0.9rem;
+}
+
+/* ===== MODAL (Ventana emergente de conciertos) ===== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+.modal-content {
+    background: var(--bg-dark-2);
+    max-width: 800px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    border: 2px solid var(--primary-blue);
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2rem;
+    color: var(--text-light);
+    cursor: pointer;
+    z-index: 1;
+    transition: color 0.3s;
+}
+
+.modal-close:hover {
+    color: var(--accent-gold);
+}
+
+.modal-poster {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.modal-date {
+    color: var(--accent-gold);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.modal-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.modal-venue {
+    color: var(--primary-blue);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.modal-description {
+    color: var(--text-gray);
+    line-height: 1.8;
+}
+
+.modal-description p {
+    margin-bottom: 1rem;
+}
+
+/* ===== FORMULARIO DE CONTACTO ===== */
+.contact {
+    background: var(--bg-dark-2);
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    color: var(--text-gray);
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 1rem;
+    background: var(--bg-dark-3);
+    border: 1px solid rgba(74, 111, 165, 0.3);
+    color: var(--text-light);
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-info {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+/* Redes sociales */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.social-link {
+    color: var(--primary-blue);
+    font-size: 2rem;
+    transition: all 0.3s;
+}
+
+.social-link:hover {
+    color: var(--accent-gold);
+    transform: translateY(-5px);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background: var(--bg-dark);
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 1px solid rgba(74, 111, 165, 0.2);
+}
+
+.footer-text {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+
+/* ===== DISEÑO RESPONSIVE (MÓVILES Y TABLETS) ===== */
+
+/* Tablets y móviles grandes */
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 20px 60px 20px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background: var(--bg-dark);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding: 2rem 0;
+        gap: 1.5rem;
+        border-bottom: 1px solid rgba(74, 111, 165, 0.2);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    .hero-logo {
+        width: 140px;
+        height: 140px;
+    }
+
+    .hero-title {
+        letter-spacing: 5px;
+    }
+
+    .hero-subtitle {
+        letter-spacing: 1px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    section {
+        padding: 4rem 0;
+    }
+
+    .past-shows-grid,
+    .featured-grid,
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .components-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .music-players {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+    .hero {
+        padding: 90px 15px 50px 15px;
+    }
+
+    .logo-text {
+        font-size: 1.3rem;
+    }
+
+    .logo-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .hero-logo {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 1rem;
+    }
+
+    .modal-poster {
+        height: 250px;
+    }
+
+    .modal-body {
+        padding: 1.5rem;
+    }
+
+    .modal-title {
+        font-size: 1.5rem;
+    }
+
+    .year-header {
+        padding: 1rem;
+    }
+
+    .year-title {
+        font-size: 1.3rem;
+    }
+}
+
+/* ===== IMAGEN PLACEHOLDER ===== 
+   Estilo para las imágenes temporales
+*/
+.placeholder-image {
+    background: linear-gradient(135deg, var(--bg-dark-3) 0%, var(--bg-dark-2) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-blue);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+}

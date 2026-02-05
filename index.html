@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- ===== META TAGS BÁSICOS ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- ===== SEO - TÍTULOS Y DESCRIPCIONES ===== -->
+    <title>Talisker Band | Música Folk y Celta en Madrid</title>
+    <meta name="description" content="Talisker Band - Grupo profesional de música folk y celta en Madrid. Banda de gaitas, percusión, coro y baile tradicional para eventos y festivales.">
+    <meta name="keywords" content="talisker band, música celta madrid, folk español, gaitas, música tradicional, conciertos madrid, banda folk">
+    <meta name="author" content="Talisker Band">
+    
+    <!-- ===== FAVICON ===== 
+         El favicon es el iconito que aparece en la pestaña del navegador
+         Coloca tu logo en formato .ico o .png en la carpeta raíz
+    -->
+    <link rel="icon" type="image/png" href="logo-talisker.png">
+    <link rel="shortcut icon" href="logo-talisker.png">
+    <link rel="apple-touch-icon" href="logo-talisker.png">
+    
+    <!-- ===== META TAGS PARA REDES SOCIALES (Open Graph) ===== 
+         Esto controla cómo se ve tu web cuando la compartes en Facebook, WhatsApp, etc.
+    -->
+    <meta property="og:title" content="Talisker Band | Música Folk y Celta">
+    <meta property="og:description" content="Grupo profesional de música folk y celta en Madrid. Conciertos, eventos y festivales.">
+    <meta property="og:image" content="https://TU-DOMINIO.com/logo-talisker.png">
+    <meta property="og:url" content="https://TU-DOMINIO.com">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    
+    <!-- ===== META TAGS PARA TWITTER ===== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Talisker Band | Música Folk y Celta">
+    <meta name="twitter:description" content="Grupo profesional de música folk y celta en Madrid">
+    <meta name="twitter:image" content="https://TU-DOMINIO.com/logo-talisker.png">
+    
+    <!-- ===== GOOGLE FONTS ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- ===== ARCHIVO CSS ===== -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- ===== GOOGLE ANALYTICS ===== 
+         IMPORTANTE: Reemplaza G-XXXXXXXXXX con tu ID de Google Analytics
+         Para obtener tu ID:
+         1. Ve a https://analytics.google.com
+         2. Crea una cuenta si no tienes
+         3. Añade tu sitio web
+         4. Te darán un código que empieza con "G-"
+    -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X9YZ47SNE9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-X9YZ47SNE9');
+    </script>
+</head>
+<body>
+    <!-- ===== NAVEGACIÓN ===== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo-talisker.png" alt="Talisker Band Logo" class="logo-image">
+                <span class="logo-text">TALISKER BAND</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#proximos">PRÓXIMOS</a></li>
+                <li><a href="#noticias">DESTACADOS</a></li>
+                <li><a href="#musica">MÚSICA</a></li>
+                <li><a href="#componentes">FORMACIONES</a></li>
+                <li><a href="#conciertos">CONCIERTOS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <img src="logo-talisker.png" alt="Talisker Band Logo" class="hero-logo">
+            <h1 class="hero-title">TALISKER BAND</h1>
+            <p class="hero-subtitle">FOLK & CELTIC MUSIC</p>
+            <div class="hero-buttons">
+                <a href="#musica" class="btn btn-primary">ESCUCHA NUESTRA MÚSICA</a>
+                <a href="#contacto" class="btn btn-secondary">CONTACTO</a>
+            </div>
+        </div>
+    </section>
+
+
+   <!-- ===== PRÓXIMOS CONCIERTOS ===== -->
+<section class="upcoming-concerts" id="proximos">
+    <div class="container">
+        <h2 class="section-title">Próximos Conciertos</h2>
+        <p class="section-subtitle">No te pierdas nuestras próximas actuaciones</p>
+        
+        <div class="upcoming-grid">
+            
+            <!-- CONCIERTO 1 - Céilí Mór -->
+            <div class="upcoming-card">
+                <div class="upcoming-badge">¡PRÓXIMAMENTE!</div>
+                <!-- Imagen clickable -->
+                <img src="recursos/proximos/ceili-mor-showcase.jpeg" 
+                     alt="Céilí Mór" 
+                     class="upcoming-thumbnail"
+                     onclick="openPosterModal('recursos/proximos/ceili-mor-showcase.jpeg', 'Céilí Mór & Showcase de Escuelas')">
+                <div class="upcoming-content">
+                    <div class="upcoming-date">7 FEB 2026</div>
+                    <h3 class="upcoming-title">Céilí Mór & Showcase de Escuelas</h3>
+                    <p class="upcoming-venue">Madrid</p>
+                    <p class="upcoming-description">
+                        Lanzamiento de la Asociación Española de Danzas Irlandesas con música en directo.
+                    </p>
+                    <a href="https://www.eventbrite.com/e/entradas-lanzamiento-de-la-asociacion-espanola-de-danzas-irlandesas-1980707734152" 
+                       target="_blank" 
+                       class="btn btn-secondary upcoming-btn">
+                        🎟️ Consigue entradas
+                    </a>
+                    <!-- Botón para ver cartel -->
+                    <button onclick="openPosterModal('recursos/proximos/ceili-mor-showcase.jpg', 'Céilí Mór & Showcase de Escuelas')" 
+                            class="btn-view-poster">
+                        🖼️ Ver cartel completo
+                    </button>
+                </div>
+            </div>
+            
+            <!-- CONCIERTO 2 - Template para cuando lo necesites -->
+            <!--
+            <div class="upcoming-card">
+                <div class="upcoming-badge">PRÓXIMAMENTE</div>
+                <img src="recursos/proximos/concierto-2.jpg" 
+                     alt="Concierto 2" 
+                     class="upcoming-thumbnail"
+                     onclick="openPosterModal('recursos/proximos/concierto-2.jpg', 'Nombre del Concierto')">
+                <div class="upcoming-content">
+                    <div class="upcoming-date">FECHA</div>
+                    <h3 class="upcoming-title">Nombre del Concierto</h3>
+                    <p class="upcoming-venue">Lugar</p>
+                    <p class="upcoming-description">
+                        Descripción del concierto.
+                    </p>
+                    <a href="#" target="_blank" class="btn btn-secondary upcoming-btn">
+                        🎟️ Más información
+                    </a>
+                    <button onclick="openPosterModal('recursos/proximos/concierto-2.jpg', 'Nombre del Concierto')" 
+                            class="btn-view-poster">
+                        🖼️ Ver cartel completo
+                    </button>
+                </div>
+            </div>
+            -->
+            
+            <!-- CONCIERTO 3 - Template para cuando lo necesites -->
+            <!--
+            <div class="upcoming-card">
+                <div class="upcoming-badge">PRÓXIMAMENTE</div>
+                <img src="recursos/proximos/concierto-3.jpg" 
+                     alt="Concierto 3" 
+                     class="upcoming-thumbnail"
+                     onclick="openPosterModal('recursos/proximos/concierto-3.jpg', 'Nombre del Concierto')">
+                <div class="upcoming-content">
+                    <div class="upcoming-date">FECHA</div>
+                    <h3 class="upcoming-title">Nombre del Concierto</h3>
+                    <p class="upcoming-venue">Lugar</p>
+                    <p class="upcoming-description">
+                        Descripción del concierto.
+                    </p>
+                    <a href="#" target="_blank" class="btn btn-secondary upcoming-btn">
+                        🎟️ Más información
+                    </a>
+                    <button onclick="openPosterModal('recursos/proximos/concierto-3.jpg', 'Nombre del Concierto')" 
+                            class="btn-view-poster">
+                        🖼️ Ver cartel completo
+                    </button>
+                </div>
+            </div>
+            -->
+            
+        </div>
+    </div>
+</section>
+    <!-- ===== MODAL PARA CARTELES DE PRÓXIMOS CONCIERTOS ===== -->
+<div id="posterModal" class="modal">
+    <div class="modal-content" style="max-width: 1000px;">
+        <span class="modal-close" onclick="closePosterModal()">&times;</span>
+        <img id="posterImage" class="poster-modal-image" src="" alt="">
+        <div class="modal-body">
+            <h2 class="modal-title" id="posterTitle"></h2>
+        </div>
+    </div>
+</div>
+
+    <!-- ===== SOBRE NOSOTROS ===== -->
+    <section class="about" id="sobre-nosotros">
+    <div class="container">
+        <h2 class="section-title">Sobre Nosotros</h2>
+        <div class="about-content">
+            <p class="about-text">
+                Talisker Band es una agrupación musical especializada en música folk y celta con sede en Madrid. 
+                Fundada con la pasión por las tradiciones musicales españolas, irlandesas y escocesas, 
+                hemos llevado nuestra música a escenarios de toda España.
+            </p>
+            <p class="about-text">
+                Nuestra versatilidad nos permite presentarnos en múltiples formaciones: desde la banda completa 
+                hasta formaciones específicas de gaitas, percusión, coro y baile tradicional gallego e irlandés.
+            </p>
+            
+            <!-- VIDEO DE YOUTUBE -->
+            <div class="about-video">
+                <iframe 
+                    width="100%" 
+                    height="450" 
+                    src="https://www.youtube.com/embed/cbRZrQTEeoc" 
+                    title="Talisker Band | Vídeo - Portfolio | Mucho más que un grupo celta" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+    <!-- ===== NOTICIAS DESTACADAS ===== 
+         EDITA AQUÍ: Cambia las fechas, títulos y descripciones de las noticias
+         Para añadir más noticias, copia todo el bloque <div class="news-card">...</div>
+    -->
+    <section class="news" id="noticias">
+        <div class="container">
+            <h2 class="section-title">Noticias Destacadas</h2>
+            <p class="section-subtitle">Las últimas novedades de Talisker Band</p>
+            <div class="news-grid">
+                <!-- NOTICIA 1 - EDITA AQUÍ -->
+                <div class="news-card">
+                    <img src="recursos/noticias/noticia-1.jpeg" alt="Noticia 1" class="news-image">
+                    <div class="news-content">
+                        <div class="news-date">19 DIC 2025</div>
+                        <h3 class="news-title">Nuevo Videoclip - Triste Canción</h3>
+                        <p class="news-description">
+                            Estamos emocionados de anunciar que hemos sacado nuestro segundo Videoclip, Triste Canción. Disponible en Youtube.
+                        </p>
+                    </div>
+                </div>
+                <!-- NOTICIA 2 - EDITA AQUÍ -->
+                <div class="news-card">
+                    <img src="recursos/noticias/noticia-2.jpeg" alt="Noticia 2" class="news-image">
+                    <div class="news-content">
+                        <div class="news-date">16 DIC 2025</div>
+                        <h3 class="news-title">4 Años de Talisker, ¡a por el quinto!</h3>
+                        <p class="news-description">
+                            Empezamos nuestras andadas un 16 de diciembre de 2021, y desde ese día la música no ha hecho más que crecer... Muchas gracias a todos por venir, y gracias también a músicos, bailarines y todos los que nos apoyáis dentro del escenario.
+                        </p>
+                    </div>
+                </div>
+                <!-- NOTICIA 3 - EDITA AQUÍ -->
+                <div class="news-card">
+                    <img src="recursos/noticias/noticia-3.jpeg" alt="Noticia 3" class="news-image">
+                    <div class="news-content">
+                        <div class="news-date">13 NOV 2024</div>
+                        <h3 class="news-title">El primer Videoclip - Lucha de Gigantes</h3>
+                        <p class="news-description">
+                            Cómo olvidar nuestro primer videoclip. La primera aventura audiovisual de Talisker. Todas las horas de planificación, grabación, edición... Y a todas las personas que nos acompañaron. Ya disponible en Youtube.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONCIERTOS DESTACADOS ===== 
+         Estos conciertos se abren con el modal al hacer clic
+    -->
+    <section class="featured-concerts" id="destacados">
+        <div class="container">
+            <h2 class="section-title">Conciertos Destacados</h2>
+            <p class="section-subtitle">Nuestras actuaciones más memorables</p>
+            <div class="featured-grid">
+                <div class="featured-card" onclick="openModal('concerts-2025', 11)">
+                    <div class="featured-badge">DESTACADO</div>
+                    <div class="past-show-content">
+                        <div class="past-show-date">11 OCT 2025</div>
+                        <h3 class="past-show-title">6º Edición del Festival Celta - Alcalá de Henares</h3>
+                        <p class="past-show-venue">Madrid</p>
+                    </div>
+                </div>
+                <div class="featured-card" onclick="openModal('concerts-2025', 10)">
+                    <div class="featured-badge">DESTACADO</div>
+                    <div class="past-show-content">
+                        <div class="past-show-date">14 JUN 2025</div>
+                        <h3 class="past-show-title">8º Edición del Festival Celtasur - Cúllar Vega, Granada</h3>
+                        <p class="past-show-venue">Granada</p>
+                    </div>
+                </div>
+                <div class="featured-card" onclick="openModal('concerts-2025', 4)">
+                    <div class="featured-badge">DESTACADO</div>
+                    <div class="past-show-content">
+                        <div class="past-show-date">29 OCT 2023</div>
+                        <h3 class="past-show-title">Teatro Lara de Madrid</h3>
+                        <p class="past-show-venue">Madrid</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NUESTRA MÚSICA ===== 
+         IMPORTANTE: Reemplaza VIDEO_ID y PLAYLIST_ID con tus IDs reales
+    -->
+    <section class="music" id="musica">
+        <div class="container">
+            <h2 class="section-title">Nuestra Música</h2>
+            <p class="section-subtitle">Escucha nuestras canciones en tus plataformas favoritas</p>
+            <div class="music-players">
+                <!-- YOUTUBE - EDITA AQUÍ EL VIDEO_ID -->
+                <div class="player-container">
+                    <h3 class="player-title">🎥 YouTube</h3>
+                    <iframe 
+                        height="315" 
+                        src="https://www.youtube.com/embed/C3h9nklArWw" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <!-- SPOTIFY - EDITA AQUÍ EL PLAYLIST_ID -->
+                <div class="player-container">
+                    <h3 class="player-title">🎵 Spotify</h3>
+                    <iframe 
+                        style="border-radius: 0;" 
+                        src="https://open.spotify.com/embed/track/3uLaeSkc2ig7U291GPZXZK?utm_source=generator" 
+                        height="352" 
+                        allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FORMACIONES ===== -->
+    <section class="components" id="componentes">
+        <div class="container">
+            <h2 class="section-title">Nuestras Formaciones</h2>
+            <p class="section-subtitle">Múltiples configuraciones para adaptarnos a cualquier evento</p>
+            <div class="components-grid">
+                <div class="component-card">
+                    <div class="component-icon">🎵</div>
+                    <h3 class="component-title">Banda Talisker</h3>
+                    <p class="component-description">
+                        Formación completa de música folk y celta con instrumentación tradicional y moderna.
+                    </p>
+                </div>
+                <div class="component-card">
+                    <div class="component-icon">🎺</div>
+                    <h3 class="component-title">Banda de Gaitas Talisker</h3>
+                    <p class="component-description">
+                        Conjunto especializado en gaitas gallegas que nos da la fuerza que necesita nuestra música.
+                    </p>
+                </div>
+                <div class="component-card">
+                    <div class="component-icon">🥁</div>
+                    <h3 class="component-title">Percusiones Talisker</h3>
+                    <p class="component-description">
+                        Sección rítmica tradicional con panderetas, panderos y cucharas.
+                    </p>
+                </div>
+                <div class="component-card">
+                    <div class="component-icon">🎤</div>
+                    <h3 class="component-title">Coro Talisker</h3>
+                    <p class="component-description">
+                        Las voces que nos apoyan en nuestra música.
+                    </p>
+                </div>
+                <div class="component-card">
+                    <div class="component-icon">💃</div>
+                    <h3 class="component-title">Baile Gallego Talisker</h3>
+                    <p class="component-description">
+                        El baile gallego que acompaña a nuestras piezas.
+                    </p>
+                </div>
+                <div class="component-card">
+                    <div class="component-icon">🍀</div>
+                    <h3 class="component-title">Baile Irlandés "Trebolinas"</h3>
+                    <p class="component-description">
+                        Grupo de danza irlandesa colaborador en nuestros espectáculos.
+                    </p>
+                </div>
+                <div class="component-card">
+                    <div class="component-icon">🎩</div>
+                    <h3 class="component-title">Baile Irlandés "Peaky Dancers"</h3>
+                    <p class="component-description">
+                        Grupo de baile irlandés que colabora con nosotros.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONCIERTOS PASADOS (POR AÑOS) ===== 
+         Los conciertos están en el archivo script.js
+         Las fotos deben estar en la carpeta recursos/conciertos/
+    -->
+    <section class="past-shows" id="conciertos">
+        <div class="container">
+            <h2 class="section-title">Conciertos Pasados</h2>
+            <p class="section-subtitle">Nuestro historial de actuaciones</p>
+            
+            <!-- 2025 -->
+            <div class="year-accordion">
+                <div class="year-header" onclick="toggleYear(this)">
+                    <div>
+                        <span class="year-title">2025</span>
+                        <span class="year-count"> • 14 conciertos</span>
+                    </div>
+                    <span class="year-icon">▼</span>
+                </div>
+                <div class="year-content">
+                    <div class="past-shows-grid" id="concerts-2025">
+                        <!-- Se carga con JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2024 -->
+            <div class="year-accordion">
+                <div class="year-header" onclick="toggleYear(this)">
+                    <div>
+                        <span class="year-title">2024</span>
+                        <span class="year-count"> • 9 conciertos</span>
+                    </div>
+                    <span class="year-icon">▼</span>
+                </div>
+                <div class="year-content">
+                    <div class="past-shows-grid" id="concerts-2024">
+                        <!-- Se carga con JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2023 -->
+            <div class="year-accordion">
+                <div class="year-header" onclick="toggleYear(this)">
+                    <div>
+                        <span class="year-title">2023</span>
+                        <span class="year-count"> • 7 conciertos</span>
+                    </div>
+                    <span class="year-icon">▼</span>
+                </div>
+                <div class="year-content">
+                    <div class="past-shows-grid" id="concerts-2023">
+                        <!-- Se carga con JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2022 -->
+            <div class="year-accordion">
+                <div class="year-header" onclick="toggleYear(this)">
+                    <div>
+                        <span class="year-title">2022</span>
+                        <span class="year-count"> • 9 conciertos</span>
+                    </div>
+                    <span class="year-icon">▼</span>
+                </div>
+                <div class="year-content">
+                    <div class="past-shows-grid" id="concerts-2022">
+                        <!-- Se carga con JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2021 -->
+            <div class="year-accordion">
+                <div class="year-header" onclick="toggleYear(this)">
+                    <div>
+                        <span class="year-title">2021</span>
+                        <span class="year-count"> • 2 conciertos</span>
+                    </div>
+                    <span class="year-icon">▼</span>
+                </div>
+                <div class="year-content">
+                    <div class="past-shows-grid" id="concerts-2021">
+                        <!-- Se carga con JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== 
+         IMPORTANTE: El formulario envía a thetaliskerband@gmail.com mediante Formspree
+         Para activarlo:
+         1. Ve a https://formspree.io
+         2. Crea una cuenta gratis
+         3. Te darán un código único
+         4. Reemplaza TU_FORM_ID_AQUI con ese código
+    -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <p class="section-subtitle">¿Quieres contratarnos para tu evento?</p>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <!-- FORMULARIO QUE ENVÍA A TU EMAIL -->
+                    <form action="https://formspree.io/f/mdaagvgp" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nombre *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <!-- Campo oculto para recibir en tu email -->
+                        <input type="hidden" name="_replyto" value="thetaliskerband@gmail.com">
+                        <input type="hidden" name="_subject" value="Nuevo mensaje desde la web de Talisker Band">
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+                <!-- REDES SOCIALES - EDITA AQUÍ TUS LINKS -->
+                <div class="contact-info">
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Tuuuusoo" target="_blank" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="https://www.instagram.com/thetaliskerband" target="_blank" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="https://www.youtube.com/@thetaliskerband" target="_blank" class="social-link" aria-label="YouTube">▶️</a>
+                        <a href="https://www.tiktok.com/@taliskerband" target="_blank" class="social-link" aria-label="TikTok">🎵</a>
+                        <a href="mailto:thetaliskerband@gmail.com" class="social-link" aria-label="Email">✉️</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2025 Talisker Band. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- ===== MODAL PARA CONCIERTOS ===== -->
+    <div id="concertModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <div class="modal-date" id="modalDate"></div>
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <p class="modal-venue" id="modalVenue"></p>
+                <div class="modal-description" id="modalDescription"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script src="script.js"></script>
+</body>
+</html>
