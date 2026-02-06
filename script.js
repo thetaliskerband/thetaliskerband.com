@@ -527,10 +527,21 @@ if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
         
-        // Aquí iría el código para enviar el email
-        // Por ahora solo mostramos un mensaje
-        alert('¡Mensaje enviado! Nos pondremos en contacto contigo pronto.');
-        contactForm.reset();
+        const formData = new FormData(contactForm);
+        fetch(contactForm.action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        }).then(response => {
+            if (response.ok) {
+                alert('¡Mensaje enviado! Nos pondremos en contacto contigo pronto.');
+                contactForm.reset();
+            } else {
+                alert('Hubo un error al enviar el mensaje. Inténtalo de nuevo.');
+            }
+        }).catch(() => {
+            alert('Hubo un error al enviar el mensaje. Inténtalo de nuevo.');
+        });
     });
 }
 
