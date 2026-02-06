@@ -522,28 +522,7 @@ document.querySelectorAll('.component-card, .past-show-card, .news-card, .featur
 // ========================================
 // FORMULARIO DE CONTACTO
 // ========================================
-const contactForm = document.querySelector('.contact-form form');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        const formData = new FormData(contactForm);
-        fetch(contactForm.action, {
-            method: 'POST',
-            body: formData,
-            headers: { 'Accept': 'application/json' }
-        }).then(response => {
-            if (response.ok) {
-                alert('¡Mensaje enviado! Nos pondremos en contacto contigo pronto.');
-                contactForm.reset();
-            } else {
-                alert('Hubo un error al enviar el mensaje. Inténtalo de nuevo.');
-            }
-        }).catch(() => {
-            alert('Hubo un error al enviar el mensaje. Inténtalo de nuevo.');
-        });
-    });
-}
+// Formulario se envía directamente a Formspree sin interceptar
 
 // ========================================
 // CARGAR TODO AL INICIAR LA PÁGINA
