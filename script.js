@@ -522,7 +522,10 @@ document.querySelectorAll('.component-card, .past-show-card, .news-card, .featur
 // ========================================
 // FORMULARIO DE CONTACTO
 // ========================================
-// Formulario se envía directamente a Formspree sin interceptar
+const contactForm = document.querySelector('.contact-form form');
+if (contactForm) {
+    // El formulario se envía directamente a Formspree
+}
 
 // ========================================
 // CARGAR TODO AL INICIAR LA PÁGINA
