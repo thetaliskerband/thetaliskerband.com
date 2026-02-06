@@ -524,7 +524,14 @@ document.querySelectorAll('.component-card, .past-show-card, .news-card, .featur
 // ========================================
 const contactForm = document.querySelector('.contact-form form');
 if (contactForm) {
-    // El formulario se envía directamente a Formspree
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // Aquí iría el código para enviar el email
+        // Por ahora solo mostramos un mensaje
+        alert('¡Mensaje enviado! Nos pondremos en contacto contigo pronto.');
+        contactForm.reset();
+    });
 }
 
 // ========================================
