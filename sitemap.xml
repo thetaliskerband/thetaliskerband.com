@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://taliskerband.com/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://taliskerband.com/recursos/promocional/foto-promocional-talisker.jpeg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://taliskerband.com/recursos/noticias/2026-manzaneda-subcampeones.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://taliskerband.com/recursos/proximos/2026-09-13-ermua.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://taliskerband.com/recursos/proximos/2026-09-19-usera.jpg</image:loc>
+    </image:image>
+  </url>
+</urlset>

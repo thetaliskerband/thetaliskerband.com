@@ -3,20 +3,138 @@
    ===================================================== 
    
    GUÍA PARA EDITAR:
-   1. Para añadir conciertos: busca "concerts2025", "concerts2024", etc
+   1. Para añadir conciertos: busca "concerts2026", "concerts2025", etc
    2. Para cambiar comportamiento del menú: busca "Menu hamburguesa"
    3. Para el modal de conciertos: busca "Modal functionality"
 */
+
+// ========================================
+// CONCIERTOS DE 2026
+// ========================================
+const concerts2026 = [
+    {
+        date: "26 JUL 2026",
+        title: "XVII Certame Celtibérico de Bandas de Gaitas",
+        venue: "Manzaneda, Ourense",
+        poster: "recursos/conciertos/2026-07-25-26-manzaneda.jpg",
+        description: `<p>Participamos en el XVII Certame Celtibérico de Bandas de Gaitas en Manzaneda, compitiendo en la categoría de segundo grado.</p>
+        <p>Talisker Band consiguió el segundo puesto y regresó a Madrid como subcampeona del certamen.</p>`
+    },
+    {
+        date: "25 JUL 2026",
+        title: "Noite Celta de Manzaneda",
+        venue: "Estación de Montaña de Manzaneda, Ourense",
+        poster: "recursos/conciertos/2026-07-25-26-manzaneda.jpg",
+        description: `<p>Actuamos en la Noite Celta de Manzaneda dentro del fin de semana del XVII Certame Celtibérico de Bandas de Gaitas.</p>
+        <p>Una noche dedicada a la música y la cultura tradicional antes de la competición del domingo.</p>`
+    },
+    {
+        date: "18 JUL 2026",
+        title: "VI Festival Vettonia Folk",
+        venue: "Navalmoral de la Sierra, Ávila",
+        poster: "recursos/conciertos/2026-07-18-vettonia.jpg",
+        description: `<p>Abrimos el Festival Vettonia Folk con un pasacalles de gaitas y percusión por Navalmoral de la Sierra.</p>
+        <p>La cita reunió a medio millar de personas alrededor de distintas formas de entender y renovar la música tradicional.</p>`
+    },
+    {
+        date: "10 JUL 2026",
+        title: "IX Festival del Agua",
+        venue: "Pozo Alcón y Quesada, Jaén",
+        poster: "recursos/conciertos/2026-07-10-festival-agua.jpg",
+        description: `<p>Participamos en el IX Festival del Agua, una edición dedicada al folclore español en el entorno de las sierras de Cazorla, Segura y Las Villas.</p>
+        <p>La jornada incluyó una actuación por la tarde en La Peña de Quesada y el concierto nocturno en El Fontanar.</p>`
+    },
+    {
+        date: "16 JUN 2026",
+        title: "Actuación privada",
+        venue: "Hortaleza, Madrid",
+        poster: "recursos/conciertos/2026-06-16-actuacion-privada.jpg",
+        description: `<p>Actuación privada de Talisker Band en Hortaleza, anunciada dentro del calendario de fechas de verano.</p>
+        <p>Una nueva ocasión para compartir música y baile tradicional en directo.</p>`
+    },
+    {
+        date: "06 JUN 2026",
+        title: "Fiestas de Hortaleza",
+        venue: "Auditorio Pilar García Peña, Madrid",
+        poster: "recursos/proximos/2026-06-06-fiestas-hortaleza-cartel.jpg",
+        description: `<p>Tras ganar el Certamen Roberto Mira, volvimos al auditorio para celebrarlo con un concierto especial dentro de las Fiestas de Primavera de Hortaleza.</p>
+        <p>Una noche muy simbólica para Talisker Band como banda ganadora del certamen.</p>`
+    },
+    {
+        date: "05 JUN 2026",
+        title: "Las Noches del Huerto",
+        venue: "Huerto Comunitario de Manoteras, Madrid",
+        poster: "recursos/proximos/2026-06-05-las-noches-del-huerto.jpg",
+        description: `<p>Volvimos a Manoteras para una noche de folk celta al aire libre, cata de poesía y celebración tras el primer premio del Certamen Roberto Mira.</p>
+        <p>Un concierto muy especial en uno de esos espacios que ya sentimos cercanos.</p>`
+    },
+    {
+        date: "30 MAY 2026",
+        title: "Final del Certamen Roberto Mira",
+        venue: "Auditorio Pilar García Peña, Madrid",
+        poster: "recursos/conciertos/2026-05-30-roberto-mira.jpg",
+        description: `<p>Actuamos en la final del Certamen de Música Roberto Mira dentro de las Fiestas de Primavera de Hortaleza.</p>
+        <p>Una tarde muy especial compartiendo escenario con otras bandas y celebrando después el primer premio del certamen.</p>`
+    },
+    {
+        date: "16 MAY 2026",
+        title: "III Mercado Celta de Alcorcón",
+        venue: "Plaza Reyes de España, Alcorcón",
+        poster: "recursos/conciertos/2026-05-16-mercado-celta-alcorcon.jpg",
+        description: `<p>Llevamos nuestra música al III Mercado Celta de Alcorcón en una noche llena de energía, invitados especiales y entrada gratuita.</p>
+        <p>Una cita preciosa junto a la Casa de Galicia de Alcorcón y el Ayuntamiento de Alcorcón.</p>`
+    },
+    {
+        date: "25 ABR 2026",
+        title: "Festival de Arte Callejero de Trebujena",
+        venue: "Trebujena, Cádiz",
+        poster: "recursos/conciertos/2026-04-25-trebujena.jpg",
+        description: `<p>Viajamos al sur para formar parte del Festival de Arte Callejero de Trebujena con una pequeña representación de nuestras diferentes secciones.</p>
+        <p>Baile irlandés, baile gallego y gaitas llevando un pedacito de Talisker a Andalucía.</p>`
+    },
+    {
+        date: "24 ABR 2026",
+        title: "Café Teatro Varvi",
+        venue: "Madrid",
+        poster: "recursos/conciertos/2026-04-24-varvi.jpg",
+        description: `<p>Concierto especial en el Café Teatro Varvi, en pleno Paseo Pintor Rosales.</p>
+        <p>Una noche de directo intenso, entradas limitadas y mucha cercanía con el público.</p>`
+    },
+    {
+        date: "19 MAR 2026",
+        title: "San Patricio en The Beer Temple",
+        venue: "Madrid",
+        poster: "recursos/conciertos/2026-03-19-the-beer-temple.jpg",
+        description: `<p>Volvimos a celebrar San Patricio en The Beer Temple con reels, baladas, brindis y mucho verde.</p>
+        <p>Una de esas noches que ya forman parte de la tradición de Talisker Band en Madrid.</p>`
+    },
+    {
+        date: "17 MAR 2026",
+        title: "San Patricio en Tramore Irish Tavern",
+        venue: "Leganés, Madrid",
+        poster: "recursos/conciertos/2026-03-17-tramore-leganes.jpg",
+        description: `<p>Celebramos el Día de San Patricio en Tramore Irish Tavern con música folk celta en directo y entrada gratuita hasta completar aforo.</p>
+        <p>Una fiesta irlandesa en Leganés con brindis, canciones y ganas de bailar.</p>`
+    },
+    {
+        date: "07 FEB 2026",
+        title: "Céilí Mór & Showcase de Escuelas",
+        venue: "Centro Gallego de Madrid",
+        poster: "recursos/proximos/ceili-mor-showcase.jpeg",
+        description: `<p>Participamos en una tarde de céilí, danza y música en vivo junto a la Asociación Española de Danzas Irlandesas.</p>
+        <p>Un encuentro muy especial para compartir baile, tradición y música en directo.</p>`
+    }
+];
 
 // ========================================
 // CONCIERTOS DE 2025
 // ========================================
 const concerts2025 = [
     {
-        date: "8 NOV 2025",
+        date: "08 NOV 2025",
         title: "Mercado de Motores",
         venue: "Madrid",
-        poster: "recursos/conciertos/2025-11-08-mercado-motores.jpg", // Cambia por tu foto real
+        poster: "recursos/conciertos/2025-11-08-mercado-motores.jpg",
         description: `<p>Volvimos al emblemático Mercado de Motores de Madrid para cerrar el año con música celta y folk.</p>
         <p>Una tarde increíble compartiendo nuestra música con el público madrileño.</p>`
     },
@@ -29,11 +147,11 @@ const concerts2025 = [
         <p>Ambientamos las calles de la ciudad natal de Cervantes con nuestra música tradicional.</p>`
     },
     {
-        date: "8 OCT 2025",
-        title: "Fiestas del Barrio del Pilar",
-        venue: "Madrid",
+        date: "08 OCT 2025",
+        title: "Fiestas del Pilar de Fuencarral-El Pardo",
+        venue: "Barrio de Fuencarral, Madrid",
         poster: "recursos/conciertos/2025-10-08-fiestas-pilar.jpg",
-        description: `<p>Celebramos las fiestas del Barrio del Pilar, uno de los eventos más tradicionales de Madrid.</p>
+        description: `<p>Celebramos las Fiestas del Pilar de Fuencarral-El Pardo en el barrio de Fuencarral.</p>
         <p>Una jornada llena de música y celebración con nuestros vecinos madrileños.</p>`
     },
     {
@@ -93,7 +211,7 @@ const concerts2025 = [
         <p>El público respondió de manera espectacular a nuestra música.</p>`
     },
     {
-        date: "5 MAY 2025",
+        date: "05 MAY 2025",
         title: "Aparición en 'La Familia de la Tele'",
         venue: "RTVE",
         poster: "recursos/conciertos/2025-05-05-rtve.jpg",
@@ -113,11 +231,11 @@ const concerts2025 = [
         title: "Concierto Privado",
         venue: "El Escorial",
         poster: "recursos/conciertos/2025-01-24-escorial.jpg",
-        description: `<p>Concierto privado en el histórico municipio de El Escorial.</p>
-        <p>Una actuación íntima en un entorno privilegiado con vistas al Real Monasterio.</p>`
+        description: `<p>Concierto privado celebrado en El Escorial junto a Trébolinas, la Agrupación Rosalía de Castro y el Coro Awen.</p>
+        <p>Una noche especial compartiendo música y baile en directo.</p>`
     },
     {
-        date: "5 ENE 2025",
+        date: "05 ENE 2025",
         title: "Cabalgata de Reyes de Hortaleza",
         venue: "Madrid",
         poster: "recursos/conciertos/2025-01-05-cabalgata.jpg",
@@ -147,6 +265,14 @@ const concerts2024 = [
         <p>Aunque hizo bastante frío, ver vuestro entusiasmo y que os quedáseis hasta el final, lo compensó con creces y nos lo pasamos muy bien como siempre en Talisker. Gracias por todo y... ¡Nos vemos en la próxima!</p>`
     },
     {
+        date: "02 NOV 2024",
+        title: "IV Concurso para Conjuntos con Gaita Gallega",
+        venue: "Centro Gallego de Alicante",
+        poster: "recursos/conciertos/2024-11-02-concurso-alicante.jpg",
+        description: `<p>Participamos en el IV Concurso para Conjuntos Instrumentales con Gaita Gallega Ciudad de Alicante.</p>
+        <p>Talisker Band obtuvo el segundo premio en un encuentro que también nos permitió compartir música con agrupaciones llegadas de distintos puntos de España.</p>`
+    },
+    {
         date: "26 OCT 2024",
         title: "Los Vermúconciertos de Kulture Market",
         venue: "Madrid",
@@ -166,13 +292,13 @@ const concerts2024 = [
     {
         date: "13 JUL 2024",
         title: "II Encuentro de Gaiteros y Dulzaineros",
-        venue: "Madrid",
+        venue: "Torneros de la Valdería, León",
         poster: "recursos/conciertos/2024-07-13-gaiteros-dulzaineros.jpg",
         description: `<p>Muy agradecidos por haber podido tocar en un sitio tan bonito y tan lleno de música y cultura folk. Fue un placer escuchar las piezas de todos los maravillosos músicos que estuvieron tocando a lo largo de la tarde.</p>
         <p>Agradecemos también la hospitalidad de todos los involucrados en hacer de esto un encuentro tan especial. ¡Con ganas de volver a tocar allí!</p>`
     },
     {
-        date: "8 JUN 2024",
+        date: "08 JUN 2024",
         title: "Festival Lugnastar V Edición",
         venue: "Villastar, Teruel",
         poster: "recursos/conciertos/2024-06-08-lugnastar.jpg",
@@ -196,12 +322,12 @@ const concerts2024 = [
         <p>La belleza del sitio acompañó al concierto, y a pesar del mal tiempo que hubo, os quedasteis con nosotros de principio a fin. ¡Gracias, miles de gracias a todos!</p>`
     },
     {
-        date: "23 ENE 2024",
-        title: "Auditorio de CCOO",
+        date: "23 FEB 2024",
+        title: "Concierto benéfico en el Auditorio Marcelino Camacho",
         venue: "Madrid",
-        poster: "recursos/conciertos/2024-01-23-auditorio-ccoo.jpg",
-        description: `<p>Tocar en el Auditorio de CCOO fue una experiencia increíble, y compartir escenario con Alicia Ramos fue un verdadero placer.</p>
-        <p>Estamos muy agradecidos de poder contar con vosotros en nuestros conciertos, y gracias a los espectaculares músicos y bailarines que colaboran con nosotros.</p>`
+        poster: "recursos/conciertos/2024-02-23-auditorio-marcelino-camacho.jpg",
+        description: `<p>Concierto benéfico folk celta en el Auditorio Marcelino Camacho junto a la Agrupación Artística Gallega Rosalía de Castro y el Coro Awen.</p>
+        <p>La recaudación se destinó al proyecto solidario Water for All.</p>`
     }
 ];
 
@@ -251,6 +377,14 @@ const concerts2023 = [
         <p>Una noche memorable en la emblemática Sala Galileo Galilei.</p>`
     },
     {
+        date: "25 MAR 2023",
+        title: "Concierto en Habemus",
+        venue: "Daganzo de Arriba, Madrid",
+        poster: "recursos/conciertos/2023-03-25-habemus.jpg",
+        description: `<p>Concierto de Talisker Band en Habemus Bar de Daganzo de Arriba.</p>
+        <p>Una noche de aforo muy limitado en la que también estrenamos en directo nuestra versión Celtic Blues.</p>`
+    },
+    {
         date: "17 MAR 2023",
         title: "Fiesta de San Patricio - The Beer Temple",
         venue: "Madrid",
@@ -281,34 +415,34 @@ const concerts2022 = [
         <p>¡Gracias por una noche increíble!</p>`
     },
     {
-        date: "OCT 2022",
+        date: "23 OCT 2022",
         title: "Teatro Lara",
         venue: "Madrid",
-        poster: "recursos/conciertos/2022-10-teatro-lara.jpg",
+        poster: "recursos/conciertos/2022-10-23-teatro-lara.jpg",
         description: `<p>Aquí vio la luz la primera gran producción de Talisker Band y nos acompañaron nuestros amigos de Rosalía de Castro y el coro Awen.</p>
         <p>Cincuenta y tres artistas sobre el escenario y colgamos el cartel de "No hay entradas". Muchas gracias Madrid.</p>`
     },
     {
-        date: "SEP 2022",
-        title: "Festival de Almenara",
+        date: "24 JUN 2022",
+        title: "XVII Festival Almenara",
         venue: "Madrid",
-        poster: "recursos/conciertos/2022-09-festival-almenara.jpg",
+        poster: "recursos/conciertos/2022-06-24-festival-almenara.jpg",
         description: `<p>Después del parón por la pandemia del COVID, Radio Almenara retoma la organización del festival de música y cuenta con nosotros.</p>
         <p>Muchas gracias amigos.</p>`
     },
     {
-        date: "MAR 2022",
-        title: "Club Theatre",
+        date: "07 MAY 2022",
+        title: "Theatre Club",
         venue: "Villarrobledo",
-        poster: "recursos/conciertos/2022-03-club-theatre.jpg",
+        poster: "recursos/conciertos/2022-05-07-theatre-club.jpg",
         description: `<p>Un concierto que no olvidaremos jamás.</p>
         <p>Muchas gracias Villarrobledo.</p>`
     },
     {
-        date: "17 MAR 2022",
+        date: "19 MAR 2022",
         title: "Amor al Plato - San Patricio",
         venue: "Madrid",
-        poster: "recursos/conciertos/2022-03-17-amor-al-plato.jpg",
+        poster: "recursos/conciertos/2022-03-19-amor-al-plato.jpg",
         description: `<p>Celebramos el día de San Patricio con un concierto donde ya no cabía un alfiler.</p>
         <p>Una noche llena de música irlandesa y celebración.</p>`
     },
@@ -358,14 +492,28 @@ function loadConcerts(concerts, containerId) {
     if (!container) return;
     
     container.innerHTML = concerts.map((concert, index) => `
-        <div class="past-show-card" onclick="openModal('${containerId}', ${index})">
-            <div class="past-show-content">
-                <div class="past-show-date">${concert.date}</div>
-                <h3 class="past-show-title">${concert.title}</h3>
-                <p class="past-show-venue">${concert.venue}</p>
-            </div>
-        </div>
+        <button type="button" class="past-show-card" data-concert-target="${containerId}" data-concert-index="${index}">
+            <span class="past-show-media">
+                <img src="${concert.poster}"
+                     alt="Cartel o imagen de ${concert.title}"
+                     class="past-show-thumbnail"
+                     loading="lazy"
+                     decoding="async">
+            </span>
+            <span class="past-show-content">
+                <span class="past-show-date">${concert.date}</span>
+                <span class="past-show-title">${concert.title}</span>
+                <span class="past-show-venue">${concert.venue}</span>
+                <span class="past-show-hint">Ver imagen y detalles</span>
+            </span>
+        </button>
     `).join('');
+    container.dataset.loaded = 'true';
+
+    const count = container.closest('.year-accordion')?.querySelector('[data-year-count]');
+    if (count) {
+        count.textContent = ` • ${concerts.length} ${concerts.length === 1 ? 'concierto' : 'conciertos'}`;
+    }
 }
 
 // ========================================
@@ -379,12 +527,21 @@ function toggleYear(header) {
     // Cerrar todos los acordeones
     document.querySelectorAll('.year-header').forEach(h => {
         h.classList.remove('active');
+        h.setAttribute('aria-expanded', 'false');
         h.nextElementSibling.classList.remove('active');
+        h.nextElementSibling.setAttribute('inert', '');
     });
     
     // Abrir el seleccionado si no estaba activo
     if (!isActive) {
+        const concertContainer = content.querySelector('.past-shows-grid');
+        if (concertContainer && concertContainer.dataset.loaded !== 'true') {
+            loadConcerts(allConcerts[concertContainer.id] || [], concertContainer.id);
+        }
+
         header.classList.add('active');
+        header.setAttribute('aria-expanded', 'true');
+        content.removeAttribute('inert');
         content.classList.add('active');
     }
 }
@@ -393,9 +550,40 @@ function toggleYear(header) {
 // MODAL DE CONCIERTOS
 // ========================================
 const modal = document.getElementById('concertModal');
+const posterModal = document.getElementById('posterModal');
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+let lastFocusedElement = null;
+
+function trapFocus(event, container) {
+    const focusable = [...container.querySelectorAll(
+        'a[href], button:not([disabled]), input:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+    )].filter(element => element.offsetParent !== null);
+
+    if (!focusable.length) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+
+    if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+    }
+}
+
+function syncBodyScrollLock() {
+    const shouldLock =
+        document.body.classList.contains('menu-open') ||
+        (modal && modal.classList.contains('active')) ||
+        (posterModal && posterModal.classList.contains('active'));
+
+    document.body.style.overflow = shouldLock ? 'hidden' : 'auto';
+}
 
 // Objeto para almacenar todos los conciertos
 const allConcerts = {
+    'concerts-2026': concerts2026,
     'concerts-2025': concerts2025,
     'concerts-2024': concerts2024,
     'concerts-2023': concerts2023,
@@ -406,47 +594,47 @@ const allConcerts = {
 // Abrir el modal con la información del concierto
 function openModal(containerId, index) {
     const concerts = allConcerts[containerId];
+    if (!concerts || !concerts[index] || !modal) return;
     const concert = concerts[index];
     
     document.getElementById('modalDate').textContent = concert.date;
     document.getElementById('modalTitle').textContent = concert.title;
     document.getElementById('modalVenue').textContent = concert.venue;
     document.getElementById('modalDescription').innerHTML = concert.description;
+    const modalPoster = document.getElementById('modalPoster');
+    if (modalPoster) {
+        modalPoster.hidden = !concert.poster;
+        modalPoster.alt = concert.poster ? `Cartel o imagen de ${concert.title}` : '';
+        modalPoster.onerror = () => {
+            modalPoster.hidden = true;
+        };
+        if (concert.poster) {
+            modalPoster.src = concert.poster;
+        } else {
+            modalPoster.removeAttribute('src');
+        }
+    }
+    lastFocusedElement = document.activeElement;
+    modal.removeAttribute('inert');
     modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
+    modal.setAttribute('aria-hidden', 'false');
+    syncBodyScrollLock();
+    modal.querySelector('[data-close-concert-modal]')?.focus();
 }
 
 // Cerrar el modal
 function closeModal() {
+    if (!modal) return;
     modal.classList.remove('active');
-    document.body.style.overflow = 'auto';
+    modal.setAttribute('aria-hidden', 'true');
+    modal.setAttribute('inert', '');
+    syncBodyScrollLock();
+    lastFocusedElement?.focus();
 }
 
 // Cerrar modal al hacer click fuera
-window.addEventListener('click', function(event) {
-    if (event.target === modal) {
-        closeModal();
-    }
-});
 
 // Cerrar modal con el botón X - esperar a que el DOM esté listo
-document.addEventListener('DOMContentLoaded', function() {
-    const modalClose = document.querySelector('.modal-close');
-    if (modalClose) {
-        modalClose.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            closeModal();
-        });
-    }
-    
-    // Cerrar con tecla ESC
-    document.addEventListener('keydown', function(event) {
-        if (event.key === 'Escape' && modal.classList.contains('active')) {
-            closeModal();
-        }
-    });
-});
 
 // ========================================
 // SCROLL SUAVE
@@ -456,7 +644,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            target.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth', block: 'start' });
         }
     });
 });
@@ -466,102 +654,225 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // ========================================
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
+const mobileNavigation = window.matchMedia('(max-width: 1024px)');
+
+function syncMobileMenuAccessibility() {
+    if (!navMenu) return;
+
+    if (mobileNavigation.matches && !navMenu.classList.contains('active')) {
+        navMenu.setAttribute('inert', '');
+    } else {
+        navMenu.removeAttribute('inert');
+    }
+}
+
+function closeMobileMenu() {
+    if (!navMenu || !hamburger) return;
+
+    navMenu.classList.remove('active');
+    hamburger.classList.remove('active');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('menu-open');
+    syncMobileMenuAccessibility();
+    syncBodyScrollLock();
+}
 
 if (hamburger) {
     hamburger.addEventListener('click', () => {
         navMenu.classList.toggle('active');
         hamburger.classList.toggle('active');
+        hamburger.setAttribute('aria-expanded', navMenu.classList.contains('active') ? 'true' : 'false');
+        document.body.classList.toggle('menu-open', navMenu.classList.contains('active'));
+        syncMobileMenuAccessibility();
+        syncBodyScrollLock();
     });
 }
+
+syncMobileMenuAccessibility();
 
 // Cerrar menú al hacer clic en un enlace
 document.querySelectorAll('.nav-menu a').forEach(link => {
     link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-        hamburger.classList.remove('active');
+        closeMobileMenu();
     });
+});
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 1024) {
+        closeMobileMenu();
+    } else {
+        syncMobileMenuAccessibility();
+    }
 });
 
 // ========================================
 // EFECTO NAVBAR AL HACER SCROLL
 // ========================================
 const navbar = document.querySelector('.navbar');
-window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 0) {
-        navbar.style.background = 'rgba(10, 10, 10, 0.98)';
-    } else {
-        navbar.style.background = 'rgba(10, 10, 10, 0.95)';
-    }
-});
+const updateNavbar = () => navbar?.classList.toggle('scrolled', window.scrollY > 12);
+window.addEventListener('scroll', updateNavbar, { passive: true });
+updateNavbar();
 
 // ========================================
-// ANIMACIONES AL HACER SCROLL
+// CARRUSELES HORIZONTALES
 // ========================================
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
-};
+function initCarousel(carousel) {
+    const track = carousel.querySelector('.carousel-track');
+    const prevButton = carousel.querySelector('.carousel-button-prev');
+    const nextButton = carousel.querySelector('.carousel-button-next');
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+    if (!track || !prevButton || !nextButton) return;
+
+    const getStep = () => {
+        const firstCard = track.children[0];
+        if (!firstCard) return 320;
+
+        const gap = parseFloat(window.getComputedStyle(track).gap || '24');
+        return firstCard.getBoundingClientRect().width + gap;
+    };
+
+    const scrollToNext = (direction = 1) => {
+        const step = getStep();
+        const maxScroll = track.scrollWidth - track.clientWidth;
+        const target = track.scrollLeft + (step * direction);
+
+        if (direction > 0 && track.scrollLeft >= maxScroll - 8) {
+            track.scrollTo({ left: 0, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+            return;
         }
-    });
-}, observerOptions);
 
-// Aplicar animaciones a las cards
-document.querySelectorAll('.component-card, .past-show-card, .news-card, .featured-card').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(30px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(el);
-});
+        if (direction < 0 && track.scrollLeft <= 8) {
+            track.scrollTo({ left: maxScroll, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+            return;
+        }
 
-// ========================================
-// FORMULARIO DE CONTACTO
-// ========================================
-const contactForm = document.querySelector('.contact-form form');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        // Formulario se envía a Formspree directamente
-    });
+        track.scrollTo({ left: target, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+    };
+
+    prevButton.addEventListener('click', () => scrollToNext(-1));
+    nextButton.addEventListener('click', () => scrollToNext(1));
 }
 
 // ========================================
 // CARGAR TODO AL INICIAR LA PÁGINA
 // ========================================
 window.addEventListener('DOMContentLoaded', () => {
-    // Cargar conciertos de cada año
-    loadConcerts(concerts2025, 'concerts-2025');
-    loadConcerts(concerts2024, 'concerts-2024');
-    loadConcerts(concerts2023, 'concerts-2023');
-    loadConcerts(concerts2022, 'concerts-2022');
-    loadConcerts(concerts2021, 'concerts-2021');
+    // Los listados históricos se renderizan al abrir cada año para aligerar la carga inicial.
+    Object.entries(allConcerts).forEach(([containerId, concerts]) => {
+        const count = document.getElementById(containerId)
+            ?.closest('.year-accordion')
+            ?.querySelector('[data-year-count]');
+        if (count) {
+            count.textContent = ` • ${concerts.length} ${concerts.length === 1 ? 'concierto' : 'conciertos'}`;
+        }
+    });
+
+    document.querySelectorAll('[data-carousel]').forEach(initCarousel);
+});
+
+document.addEventListener('click', event => {
+    const concertTrigger = event.target.closest('[data-concert-target]');
+    if (concertTrigger) {
+        const containerId = concertTrigger.dataset.concertTarget;
+        const concerts = allConcerts[containerId] || [];
+        const index = concertTrigger.dataset.concertTitle
+            ? concerts.findIndex(concert => concert.title === concertTrigger.dataset.concertTitle)
+            : Number(concertTrigger.dataset.concertIndex);
+
+        openModal(containerId, index);
+        return;
+    }
+
+    const posterTrigger = event.target.closest('[data-poster-src]');
+    if (posterTrigger) {
+        openPosterModal(posterTrigger.dataset.posterSrc, posterTrigger.dataset.posterTitle);
+        return;
+    }
+
+    const yearTrigger = event.target.closest('[data-year-toggle]');
+    if (yearTrigger) {
+        toggleYear(yearTrigger);
+        return;
+    }
+
+    if (event.target.closest('[data-close-concert-modal]')) {
+        closeModal();
+        return;
+    }
+
+    if (event.target.closest('[data-close-poster-modal]')) {
+        closePosterModal();
+        return;
+    }
+
+    if (event.target === modal) {
+        closeModal();
+        return;
+    }
+
+    if (event.target === posterModal) {
+        closePosterModal();
+    }
+});
+
+document.addEventListener('keydown', event => {
+    if (event.key === 'Tab') {
+        const activeDialog = posterModal?.classList.contains('active')
+            ? posterModal
+            : modal?.classList.contains('active') ? modal : null;
+        const activeMenu = navMenu?.classList.contains('active')
+            ? document.querySelector('.nav-container')
+            : null;
+        if (activeDialog) {
+            trapFocus(event, activeDialog);
+        } else if (activeMenu) {
+            trapFocus(event, activeMenu);
+        }
+        return;
+    }
+
+    if (event.key !== 'Escape') return;
+
+    if (posterModal && posterModal.classList.contains('active')) {
+        closePosterModal();
+        return;
+    }
+
+    if (modal && modal.classList.contains('active')) {
+        closeModal();
+        return;
+    }
+
+    if (navMenu?.classList.contains('active')) {
+        closeMobileMenu();
+        hamburger?.focus();
+    }
 });
 // ========================================
 // MODAL PARA CARTELES DE PRÓXIMOS CONCIERTOS
 // ========================================
-const posterModal = document.getElementById('posterModal');
-
 // Abrir modal con el cartel
 function openPosterModal(imageSrc, title) {
+    if (!posterModal) return;
+
     document.getElementById('posterImage').src = imageSrc;
+    document.getElementById('posterImage').alt = title;
     document.getElementById('posterTitle').textContent = title;
+    lastFocusedElement = document.activeElement;
+    posterModal.removeAttribute('inert');
     posterModal.classList.add('active');
-    document.body.style.overflow = 'hidden';
+    posterModal.setAttribute('aria-hidden', 'false');
+    syncBodyScrollLock();
+    posterModal.querySelector('[data-close-poster-modal]')?.focus();
 }
 
 // Cerrar modal del cartel
 function closePosterModal() {
-    posterModal.classList.remove('active');
-    document.body.style.overflow = 'auto';
-}
+    if (!posterModal) return;
 
-// Cerrar al hacer click fuera
-window.onclick = function(event) {
-    if (event.target == posterModal) {
-        closePosterModal();
-    }
+    posterModal.classList.remove('active');
+    posterModal.setAttribute('aria-hidden', 'true');
+    posterModal.setAttribute('inert', '');
+    syncBodyScrollLock();
+    lastFocusedElement?.focus();
 }

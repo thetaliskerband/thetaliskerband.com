@@ -1,0 +1,11 @@
+# Exportaciones privadas usadas para auditar las publicaciones de Instagram.
+instagram-*.zip
+
+# Archivos locales y resultados de herramientas.
+.DS_Store
+Thumbs.db
+desktop.ini
+test-results/
+playwright-report/
+lighthouse-report.*
+*.log
