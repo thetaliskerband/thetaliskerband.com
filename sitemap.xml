@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://taliskerband.com/</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,7 +13,7 @@
       <image:loc>https://taliskerband.com/recursos/noticias/2026-manzaneda-subcampeones.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://taliskerband.com/recursos/proximos/2026-09-13-ermua.jpg</image:loc>
+      <image:loc>https://taliskerband.com/recursos/conciertos/2026-09-13-ermua.jpg</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://taliskerband.com/recursos/proximos/2026-09-19-usera.jpg</image:loc>

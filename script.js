@@ -13,6 +13,14 @@
 // ========================================
 const concerts2026 = [
     {
+        date: "13 SEP 2026",
+        title: "XXI Folkez Blai",
+        venue: "Plaza Cardenal Orbe, Ermua",
+        poster: "recursos/conciertos/2026-09-13-ermua.jpg",
+        description: `<p>Participamos en la vigesimoprimera edición del Folkez Blai, celebrado en la Plaza Cardenal Orbe de Ermua.</p>
+        <p>Una nueva parada de nuestra temporada 2026 llevando música folk y celta en directo al País Vasco.</p>`
+    },
+    {
         date: "26 JUL 2026",
         title: "XVII Certame Celtibérico de Bandas de Gaitas",
         venue: "Manzaneda, Ourense",
