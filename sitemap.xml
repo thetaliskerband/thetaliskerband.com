@@ -18,5 +18,14 @@
     <image:image>
       <image:loc>https://taliskerband.com/recursos/proximos/2026-09-19-usera.jpg</image:loc>
     </image:image>
+    <image:image>
+      <image:loc>https://taliskerband.com/recursos/mapas/ruta-talisker-2026.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://taliskerband.com/recursos/mapas/ruta-talisker-2025.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://taliskerband.com/recursos/mapas/ruta-talisker-2024.webp</image:loc>
+    </image:image>
   </url>
 </urlset>

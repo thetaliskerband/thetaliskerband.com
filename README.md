@@ -7,6 +7,7 @@ Web oficial estática de Talisker Band, preparada para publicarse con GitHub Pag
 - `index.html`: portada y contenido principal.
 - `recursos/`: carteles, fotografías, miniaturas WebP y tipografías utilizadas por la web.
 - `recursos/dossier/`: dossier artístico descargable en PDF.
+- `recursos/mapas/`: mapas optimizados del histórico de rutas.
 - `script.js`: conciertos pasados y comportamiento interactivo.
 - `styles.css`: diseño general y responsive.
 - `sitemap.xml` y `robots.txt`: rastreo e indexación.

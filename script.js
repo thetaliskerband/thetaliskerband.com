@@ -520,7 +520,7 @@ function loadConcerts(concerts, containerId) {
 
     const count = container.closest('.year-accordion')?.querySelector('[data-year-count]');
     if (count) {
-        count.textContent = ` • ${concerts.length} ${concerts.length === 1 ? 'concierto' : 'conciertos'}`;
+        count.textContent = ` • ${concerts.length} ${concerts.length === 1 ? 'actuación' : 'actuaciones'}`;
     }
 }
 
@@ -771,7 +771,7 @@ window.addEventListener('DOMContentLoaded', () => {
             ?.closest('.year-accordion')
             ?.querySelector('[data-year-count]');
         if (count) {
-            count.textContent = ` • ${concerts.length} ${concerts.length === 1 ? 'concierto' : 'conciertos'}`;
+            count.textContent = ` • ${concerts.length} ${concerts.length === 1 ? 'actuación' : 'actuaciones'}`;
         }
     });
 
