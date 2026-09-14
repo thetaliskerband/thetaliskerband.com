@@ -651,6 +651,13 @@ section {
     box-shadow: 0 10px 40px rgba(184, 134, 11, 0.3);
 }
 
+/* Centra la última tarjeta cuando el número de próximos conciertos es impar. */
+.upcoming-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    width: calc((100% - 1.5rem) / 2);
+    justify-self: center;
+}
+
 .upcoming-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 60px rgba(184, 134, 11, 0.5);
@@ -763,6 +770,11 @@ section {
 
     .upcoming-grid {
         grid-template-columns: 1fr;
+    }
+
+    .upcoming-card:last-child:nth-child(odd) {
+        grid-column: auto;
+        width: 100%;
     }
 
     .upcoming-card {
