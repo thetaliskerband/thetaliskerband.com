@@ -13,6 +13,14 @@
 // ========================================
 const concerts2026 = [
     {
+        date: "15 SEP 2026",
+        title: "Actuación privada",
+        venue: "Evento privado",
+        poster: "recursos/promocional/foto-promocional-talisker.jpeg",
+        description: `<p>Actuación privada de Talisker Band celebrada el 15 de septiembre de 2026.</p>
+        <p>La ubicación y los detalles del evento no se publican por respeto a su carácter privado.</p>`
+    },
+    {
         date: "13 SEP 2026",
         title: "XXI Folkez Blai",
         venue: "Plaza Cardenal Orbe, Ermua",
