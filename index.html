@@ -197,52 +197,54 @@
         <h2 class="section-title">Pr&oacute;ximos Conciertos</h2>
         <p class="section-subtitle">Pr&oacute;ximas actuaciones confirmadas de Talisker Band</p>
 
+        <!-- INICIO PROXIMOS GENERADOS -->
         <div class="upcoming-grid">
             <div class="upcoming-card">
-                <div class="upcoming-badge">ACTUACI&Oacute;N PRIVADA</div>
                 <button type="button" class="poster-trigger"
                         data-poster-src="recursos/promocional/foto-promocional-talisker.jpeg"
-                        data-poster-title="Actuaci&oacute;n privada &middot; 19 de septiembre"
-                        aria-label="Ampliar la foto de Talisker Band">
+                        data-poster-title="Actuación privada · 19 de septiembre de 2026"
+                        aria-label="Ampliar la foto de Actuación privada">
                     <img src="recursos/miniaturas/foto-promocional-talisker.webp"
-                         alt="Formaci&oacute;n de Talisker Band para una actuaci&oacute;n privada"
+                         alt="Formación de Talisker Band para una actuación privada"
                          class="upcoming-thumbnail"
                          loading="lazy" decoding="async">
                 </button>
                 <div class="upcoming-content">
+                    <div class="upcoming-badge">ACTUACIÓN PRIVADA</div>
                     <time class="upcoming-date" datetime="2026-09-19">19 SEP 2026</time>
-                    <h3 class="upcoming-title">Actuaci&oacute;n privada</h3>
+                    <h3 class="upcoming-title">Actuación privada</h3>
                     <p class="upcoming-venue">Evento privado</p>
-                    <p class="upcoming-description">Actuaci&oacute;n de Talisker Band para un evento privado.</p>
+                    <p class="upcoming-description">Actuación de Talisker Band para un evento privado.</p>
                 </div>
             </div>
 
             <div class="upcoming-card">
-                <div class="upcoming-badge">ENTRADA LIBRE</div>
                 <button type="button" class="poster-trigger"
                         data-poster-src="recursos/proximos/2026-09-19-usera.jpg"
-                        data-poster-title="Festival Folk de Usera &middot; 19 de septiembre"
-                        aria-label="Ampliar el cartel del Festival Folk de Usera">
+                        data-poster-title="Festival Folk de Usera · 19 de septiembre de 2026"
+                        aria-label="Ampliar el cartel de Festival Folk de Usera">
                     <img src="recursos/miniaturas/2026-09-19-usera.webp"
                          alt="Cartel del Festival Folk de Usera 2026"
                          class="upcoming-thumbnail poster-contain"
                          loading="lazy" decoding="async">
                 </button>
                 <div class="upcoming-content">
+                    <div class="upcoming-badge">ENTRADA LIBRE</div>
                     <time class="upcoming-date" datetime="2026-09-19T19:30:00+02:00">19 SEP 2026</time>
                     <h3 class="upcoming-title">Festival Folk de Usera</h3>
-                    <p class="upcoming-venue">Plaza de la Asociaci&oacute;n, Orcasitas (Usera) &middot; 19:30 h</p>
+                    <p class="upcoming-venue">Plaza de la Asociación, Orcasitas (Usera) · 19:30 h</p>
                     <p class="upcoming-description">Talisker Band participa en Usera Folk 2026 junto a Arrabel.</p>
                     <button type="button"
                             class="btn btn-secondary upcoming-btn"
                             data-poster-src="recursos/proximos/2026-09-19-usera.jpg"
-                            data-poster-title="Festival Folk de Usera &middot; 19 de septiembre"
-                            aria-label="Ampliar el cartel del Festival Folk de Usera">
-                        Ver concierto
+                            data-poster-title="Festival Folk de Usera · 19 de septiembre de 2026"
+                            aria-label="Ampliar cartel de Festival Folk de Usera">
+                        Ampliar cartel
                     </button>
                 </div>
             </div>
         </div>
+        <!-- FIN PROXIMOS GENERADOS -->
     </div>
 </section>
     <!-- ===== MODAL PARA CARTELES DE PRÓXIMOS CONCIERTOS ===== -->
@@ -273,15 +275,16 @@
 
             <!-- VIDEO DE YOUTUBE -->
             <div class="about-video">
-                <iframe
-                    height="450"
-                    src="https://www.youtube.com/embed/cbRZrQTEeoc"
-                    title="Talisker Band | Vídeo - Portfolio | Mucho más que un grupo celta"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    loading="lazy"
-                    allowfullscreen>
-                </iframe>
+                <div class="media-player media-player-video">
+                    <a class="media-preview" href="https://www.youtube.com/watch?v=cbRZrQTEeoc"
+                       data-embed-src="https://www.youtube.com/embed/cbRZrQTEeoc?autoplay=1"
+                       data-embed-title="Talisker Band | Vídeo - Portfolio | Mucho más que un grupo celta"
+                       aria-label="Ver nuestro vídeo de presentación de Talisker Band">
+                        <img src="recursos/miniaturas/video-presentacion-talisker.webp" alt="" loading="lazy" decoding="async" width="960" height="540">
+                        <span class="media-preview-caption"><span class="media-play-mark" aria-hidden="true">▶</span> Ver nuestro vídeo de presentación</span>
+                    </a>
+                </div>
+                <a class="media-external-link" href="https://www.youtube.com/watch?v=cbRZrQTEeoc" target="_blank" rel="noopener noreferrer">Ver directamente en YouTube</a>
             </div>
 
         </div>
@@ -297,28 +300,30 @@
                 <!-- YOUTUBE -->
                 <div class="player-container">
                     <h3 class="player-title">YouTube</h3>
-                    <iframe
-                        height="315"
-                        src="https://www.youtube.com/embed/C3h9nklArWw"
-                        title="Talisker Band en YouTube"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen>
-                    </iframe>
+                    <div class="media-player media-player-video">
+                        <a class="media-preview" href="https://www.youtube.com/watch?v=C3h9nklArWw"
+                           data-embed-src="https://www.youtube.com/embed/C3h9nklArWw?autoplay=1"
+                           data-embed-title="Triste Canción · Talisker Band en YouTube"
+                           aria-label="Reproducir Triste Canción de Talisker Band">
+                            <img src="recursos/miniaturas/videoclip-triste-cancion.webp" alt="" loading="lazy" decoding="async" width="960" height="540">
+                            <span class="media-preview-caption"><span class="media-play-mark" aria-hidden="true">▶</span> Triste Canción</span>
+                        </a>
+                    </div>
+                    <a class="media-external-link" href="https://www.youtube.com/watch?v=C3h9nklArWw" target="_blank" rel="noopener noreferrer">Ver directamente en YouTube</a>
                 </div>
                 <!-- SPOTIFY -->
                 <div class="player-container">
                     <h3 class="player-title">Spotify</h3>
-                    <iframe
-                        class="spotify-embed"
-                        src="https://open.spotify.com/embed/track/3uLaeSkc2ig7U291GPZXZK?utm_source=generator"
-                        title="Talisker Band en Spotify"
-                        height="352"
-                        allowfullscreen=""
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        loading="lazy">
-                    </iframe>
+                    <div class="media-player media-player-spotify">
+                        <a class="media-preview" href="https://open.spotify.com/track/3uLaeSkc2ig7U291GPZXZK"
+                           data-embed-src="https://open.spotify.com/embed/track/3uLaeSkc2ig7U291GPZXZK"
+                           data-embed-title="Talisker Band en Spotify"
+                           aria-label="Escuchar Talisker en Spotify: abrir el reproductor">
+                            <img src="logo-talisker-400.webp" alt="" loading="lazy" decoding="async" width="400" height="400">
+                            <span class="media-preview-caption"><span class="media-play-mark" aria-hidden="true">▶</span> Escuchar Talisker en Spotify</span>
+                        </a>
+                    </div>
+                    <a class="media-external-link" href="https://open.spotify.com/track/3uLaeSkc2ig7U291GPZXZK" target="_blank" rel="noopener noreferrer">Abrir directamente en Spotify</a>
                 </div>
             </div>
         </div>
@@ -389,7 +394,7 @@
                     <p class="news-description">
                         Logramos el segundo puesto en segundo grado en el XVII Certame Celtibérico de Bandas de Gaitas de Manzaneda, un reconocimiento al esfuerzo de toda la banda.
                     </p>
-                    <a href="https://www.instagram.com/taliskerband_oficial/reels/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary news-featured-button">Ver en Instagram</a>
+                    <a href="https://www.instagram.com/reel/DbTX4CTN-y3/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary news-featured-button">Ver en Instagram</a>
                 </div>
             </article>
             <div class="carousel" data-carousel>
@@ -479,7 +484,7 @@
                         <h3 class="event-title">Segundo Curso de Gaita y Percusión Gallega</h3>
                         <p class="event-location">Madrid · 10:00-14:00 / 15:30-19:30</p>
                         <p class="event-description">
-                            Nuevo curso formativo abierto a todo el mundo, centrado en repertorio propio de Talisker Band y organizado junto a la Asociación Tréboles y Toxos.
+                            Celebramos nuestro segundo curso de gaita y percusión gallega, centrado en repertorio propio de Talisker Band y organizado junto a la Asociación Tréboles y Toxos.
                         </p>
                         <a href="https://www.instagram.com/p/DX2LAM6ALWl/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary event-link">Ver publicación</a>
                     </div>
