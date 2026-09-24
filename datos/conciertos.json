@@ -1,33 +1,6 @@
 {
-  "updatedAt": "2026-09-16",
-  "upcoming": [
-    {
-      "date": "2026-09-19",
-      "title": "Actuación privada",
-      "venue": "Evento privado",
-      "description": "Actuación de Talisker Band para un evento privado.",
-      "badge": "ACTUACIÓN PRIVADA",
-      "poster": "recursos/promocional/foto-promocional-talisker.jpeg",
-      "thumbnail": "recursos/miniaturas/foto-promocional-talisker.webp",
-      "imageAlt": "Formación de Talisker Band para una actuación privada",
-      "imageKind": "foto",
-      "contain": false,
-      "showAction": false
-    },
-    {
-      "date": "2026-09-19T19:30:00+02:00",
-      "title": "Festival Folk de Usera",
-      "venue": "Plaza de la Asociación, Orcasitas (Usera) · 19:30 h",
-      "description": "Talisker Band participa en Usera Folk 2026 junto a Arrabel.",
-      "badge": "ENTRADA LIBRE",
-      "poster": "recursos/proximos/2026-09-19-usera.jpg",
-      "thumbnail": "recursos/miniaturas/2026-09-19-usera.webp",
-      "imageAlt": "Cartel del Festival Folk de Usera 2026",
-      "imageKind": "cartel",
-      "contain": true,
-      "showAction": true
-    }
-  ],
+  "updatedAt": "2026-09-24",
+  "upcoming": [],
   "past": {
     "2021": [
       {
@@ -327,6 +300,20 @@
       }
     ],
     "2026": [
+      {
+        "date": "19 SEP 2026",
+        "title": "Actuación privada",
+        "venue": "Evento privado",
+        "poster": "recursos/promocional/foto-promocional-talisker.jpeg",
+        "description": "<p>Actuación privada de Talisker Band celebrada el 19 de septiembre de 2026.</p>\n        <p>La ubicación y los detalles del evento no se publican por respeto a su carácter privado.</p>"
+      },
+      {
+        "date": "19 SEP 2026",
+        "title": "Festival Folk de Usera",
+        "venue": "Plaza de la Asociación, Orcasitas (Usera), Madrid",
+        "poster": "recursos/proximos/2026-09-19-usera.jpg",
+        "description": "<p>Actuamos en el Festival Folk de Usera junto a Arrabel, en la Plaza de la Asociación de Orcasitas.</p>\n        <p>Una tarde para compartir música y tradición en directo con el público de Usera.</p>"
+      },
       {
         "date": "15 SEP 2026",
         "title": "Actuación privada",

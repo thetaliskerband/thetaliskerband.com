@@ -12,6 +12,20 @@
 const allConcerts = {
     "concerts-2026": [
         {
+            "date": "19 SEP 2026",
+            "title": "Actuación privada",
+            "venue": "Evento privado",
+            "poster": "recursos/promocional/foto-promocional-talisker.jpeg",
+            "description": "<p>Actuación privada de Talisker Band celebrada el 19 de septiembre de 2026.</p>\n        <p>La ubicación y los detalles del evento no se publican por respeto a su carácter privado.</p>"
+        },
+        {
+            "date": "19 SEP 2026",
+            "title": "Festival Folk de Usera",
+            "venue": "Plaza de la Asociación, Orcasitas (Usera), Madrid",
+            "poster": "recursos/proximos/2026-09-19-usera.jpg",
+            "description": "<p>Actuamos en el Festival Folk de Usera junto a Arrabel, en la Plaza de la Asociación de Orcasitas.</p>\n        <p>Una tarde para compartir música y tradición en directo con el público de Usera.</p>"
+        },
+        {
             "date": "15 SEP 2026",
             "title": "Actuación privada",
             "venue": "Evento privado",
