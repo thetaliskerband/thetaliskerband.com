@@ -117,9 +117,8 @@ const cards = data.upcoming.map(upcomingCard).join('\n\n');
 const upcomingMarkup = data.upcoming.length
     ? `        <div class="upcoming-grid">\n${cards}\n        </div>`
     : `        <div class="upcoming-secret">
-            <p class="upcoming-secret-kicker">NUEVAS FECHAS EN CAMINO</p>
-            <h3>Tenemos nuevas actuaciones preparadas...</h3>
-            <p>Pero, de momento, son un secreto. Muy pronto desvelaremos las próximas paradas de Talisker Band.</p>
+            <p>Tenemos nuevas actuaciones preparadas, pero de momento son un secreto.</p>
+            <p>Muy pronto os contaremos más.</p>
         </div>`;
 html = replaceBlock(html, '<!-- INICIO PROXIMOS GENERADOS -->', '        <!-- FIN PROXIMOS GENERADOS -->', upcomingMarkup);
 const pageYears = [...html.matchAll(/id="year-toggle-(\d{4})"/g)].map(match => match[1]);
