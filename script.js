@@ -27,10 +27,10 @@ const allConcerts = {
         },
         {
             "date": "15 SEP 2026",
-            "title": "Actuación privada",
-            "venue": "Evento privado",
-            "poster": "recursos/promocional/foto-promocional-talisker.jpeg",
-            "description": "<p>Actuación privada de Talisker Band celebrada el 15 de septiembre de 2026.</p>\n        <p>La ubicación y los detalles del evento no se publican por respeto a su carácter privado.</p>"
+            "title": "Grabación para la Embajada de Irlanda",
+            "venue": "Madrid",
+            "poster": "recursos/conciertos/2026-09-15-embajada-irlanda.jpg",
+            "description": "<p>Participamos en una grabación para la Embajada de Irlanda en España, llevando la música tradicional irlandesa a las calles de Madrid.</p>\n        <p>El resultado se publicó el 25 de septiembre de 2026 en la cuenta oficial de la Embajada.</p>"
         },
         {
             "date": "13 SEP 2026",
