@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-09-25",
-  "upcoming": [],
+  "updatedAt": "2026-10-01",
+  "upcoming": [
+    {
+      "date": "2026-10-24",
+      "title": "1.º Encuentro de Gaiteros en Extremadura",
+      "venue": "Guadalupe, Cáceres",
+      "description": "Talisker Band participa como banda invitada en este encuentro dedicado a la música y la cultura tradicional.",
+      "badge": "BANDA INVITADA",
+      "poster": "recursos/proximos/2026-10-24-encuentro-gaiteros-extremadura.webp",
+      "thumbnail": "recursos/miniaturas/2026-10-24-encuentro-gaiteros-extremadura.webp",
+      "imageAlt": "Cartel del 1.º Encuentro de Gaiteros en Extremadura, el 24 de octubre de 2026 en Guadalupe",
+      "imageKind": "cartel",
+      "contain": true,
+      "showAction": true
+    }
+  ],
   "past": {
     "2021": [
       {
