@@ -419,6 +419,21 @@ section {
     display: block;
 }
 
+.news-featured-media {
+    min-width: 0;
+    padding: 1.25rem;
+    background: #080808;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-player-instagram {
+    width: min(100%, 350px);
+    aspect-ratio: 9 / 16;
+}
+
 .news-featured-content {
     padding: 2.5rem;
     display: flex;
@@ -481,6 +496,21 @@ section {
 .news-description {
     color: var(--text-gray);
     line-height: 1.6;
+}
+
+.news-instagram-account {
+    margin-top: 0.85rem;
+}
+
+.news-instagram-account a,
+.modal-description a {
+    color: var(--text-blue);
+    text-underline-offset: 0.2em;
+}
+
+.news-card-button {
+    align-self: flex-start;
+    margin-top: 1.25rem;
 }
 
 /* ===== SECCIÓN EVENTOS ===== */

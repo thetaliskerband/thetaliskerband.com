@@ -30,7 +30,7 @@ const allConcerts = {
             "title": "Grabación para la Embajada de Irlanda",
             "venue": "Madrid",
             "poster": "recursos/conciertos/2026-09-15-embajada-irlanda.jpg",
-            "description": "<p>Participamos en una grabación para la Embajada de Irlanda en España, llevando la música tradicional irlandesa a las calles de Madrid.</p>\n        <p>El resultado se publicó el 25 de septiembre de 2026 en la cuenta oficial de la Embajada.</p>"
+            "description": "<p>Participamos en una grabación para la Embajada de Irlanda en España, llevando la música tradicional irlandesa a las calles de Madrid.</p>\n        <p>El resultado se publicó el 25 de septiembre de 2026 en la cuenta oficial <a href=\"https://www.instagram.com/irishembassymadrid/\" target=\"_blank\" rel=\"noopener noreferrer\">@irishembassymadrid</a>.</p>\n        <p><a href=\"https://www.instagram.com/irishembassymadrid/reel/DdtHatzy6yd/\" target=\"_blank\" rel=\"noopener noreferrer\">Ver el vídeo en Instagram</a></p>"
         },
         {
             "date": "13 SEP 2026",
@@ -71,7 +71,7 @@ const allConcerts = {
             "date": "16 JUN 2026",
             "title": "Actuación privada",
             "venue": "Hortaleza, Madrid",
-            "poster": "recursos/conciertos/2026-06-16-actuacion-privada.jpg",
+            "poster": "recursos/promocional/foto-promocional-talisker.jpeg",
             "description": "<p>Actuación privada de Talisker Band en Hortaleza, anunciada dentro del calendario de fechas de verano.</p>\n        <p>Una nueva ocasión para compartir música y baile tradicional en directo.</p>"
         },
         {
