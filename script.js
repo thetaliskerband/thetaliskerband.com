@@ -12,6 +12,13 @@
 const allConcerts = {
     "concerts-2026": [
         {
+            "date": "24 OCT 2026",
+            "title": "1.º Encuentro de Gaiteros en Extremadura",
+            "venue": "Guadalupe, Cáceres",
+            "poster": "recursos/conciertos/2026-10-24-encuentro-gaiteros-extremadura.webp",
+            "description": "<p>Participamos como banda invitada en el 1.º Encuentro de Gaiteros en Extremadura, celebrado en Guadalupe.</p>\n        <p>Una jornada dedicada a compartir la música y la cultura tradicional.</p>"
+        },
+        {
             "date": "19 SEP 2026",
             "title": "Actuación privada",
             "venue": "Evento privado",
