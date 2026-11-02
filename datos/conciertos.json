@@ -1,19 +1,6 @@
 {
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "upcoming": [
-    {
-      "date": "2026-11-01",
-      "title": "Concierto en Sigüenza",
-      "venue": "Auditorio El Pósito, Sigüenza · 19:00 h",
-      "description": "Talisker Band cierra la VII edición de Música en Clave de RE-D de Ciudades y Villas Medievales 2026.",
-      "badge": "CONCIERTO",
-      "poster": "recursos/proximos/2026-11-01-siguenza.webp",
-      "thumbnail": "recursos/miniaturas/2026-11-01-siguenza.webp",
-      "imageAlt": "Cartel del concierto de Talisker Band en Sigüenza, el 1 de noviembre de 2026 en el Auditorio El Pósito",
-      "imageKind": "cartel",
-      "contain": true,
-      "showAction": true
-    },
     {
       "date": "2026-11-08",
       "title": "IX Encuentro de Gaitas y Dulzainas",
@@ -327,6 +314,13 @@
       }
     ],
     "2026": [
+      {
+        "date": "01 NOV 2026",
+        "title": "Concierto en Sigüenza",
+        "venue": "Auditorio El Pósito, Sigüenza",
+        "poster": "recursos/conciertos/2026-11-01-siguenza.webp",
+        "description": "<p>Cerramos la VII edición de Música en Clave de RE-D de Ciudades y Villas Medievales con un concierto en el Auditorio El Pósito de Sigüenza.</p>\n        <p>Una noche de folk y música celta en uno de los enclaves históricos más especiales de la temporada.</p>"
+      },
       {
         "date": "24 OCT 2026",
         "title": "1.º Encuentro de Gaiteros en Extremadura",

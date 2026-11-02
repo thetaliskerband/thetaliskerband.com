@@ -12,6 +12,13 @@
 const allConcerts = {
     "concerts-2026": [
         {
+            "date": "01 NOV 2026",
+            "title": "Concierto en Sigüenza",
+            "venue": "Auditorio El Pósito, Sigüenza",
+            "poster": "recursos/conciertos/2026-11-01-siguenza.webp",
+            "description": "<p>Cerramos la VII edición de Música en Clave de RE-D de Ciudades y Villas Medievales con un concierto en el Auditorio El Pósito de Sigüenza.</p>\n        <p>Una noche de folk y música celta en uno de los enclaves históricos más especiales de la temporada.</p>"
+        },
+        {
             "date": "24 OCT 2026",
             "title": "1.º Encuentro de Gaiteros en Extremadura",
             "venue": "Guadalupe, Cáceres",
