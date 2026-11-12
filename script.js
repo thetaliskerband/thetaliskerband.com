@@ -12,6 +12,13 @@
 const allConcerts = {
     "concerts-2026": [
         {
+            "date": "08 NOV 2026",
+            "title": "IX Encuentro de Gaitas y Dulzainas",
+            "venue": "Paseo del Prado, Madrid",
+            "poster": "recursos/conciertos/2026-11-08-encuentro-gaitas-prado.webp",
+            "description": "<p>Participamos en el IX Encuentro de Gaitas y Dulzainas de la Villa de Madrid, celebrado en el Paseo del Prado.</p>\n        <p>Una mañana de pasacalles, música y baile tradicional compartida con otras diez agrupaciones.</p>"
+        },
+        {
             "date": "01 NOV 2026",
             "title": "Concierto en Sigüenza",
             "venue": "Auditorio El Pósito, Sigüenza",
