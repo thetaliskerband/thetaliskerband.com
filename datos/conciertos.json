@@ -16,13 +16,13 @@
     },
     {
       "date": "2026-12-13",
-      "title": "Foliada Aberta",
+      "title": "Actuación en el Centro Gallego de Madrid",
       "venue": "Centro Gallego de Madrid · Desde las 12:00 h",
-      "description": "Talisker Band participa en la foliada en la que el Centro Gallego presenta a su grupo folclórico. C/ Carretas, 14, 3.ª planta. Aforo limitado.",
-      "badge": "FOLIADA",
+      "description": "Talisker Band actúa durante la presentación del grupo folclórico del Centro Gallego. C/ Carretas, 14, 3.ª planta. Aforo limitado.",
+      "badge": "ACTUACIÓN",
       "poster": "recursos/proximos/2026-12-13-foliada-aberta.jpeg",
       "thumbnail": "recursos/miniaturas/2026-12-13-foliada-aberta.webp",
-      "imageAlt": "Cartel de la Foliada Aberta del Centro Gallego de Madrid, el 13 de diciembre desde las 12:00 h",
+      "imageAlt": "Cartel de la actuación en el Centro Gallego de Madrid, el 13 de diciembre desde las 12:00 h",
       "imageKind": "cartel",
       "contain": true,
       "showAction": true
